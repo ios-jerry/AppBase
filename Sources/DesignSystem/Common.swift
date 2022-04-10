@@ -15,7 +15,6 @@ extension Bundle {
         guard let bundle = Bundle.bundleWith(packageName: "AppBase",
                                           libraryName:  "DesignSystem") else {
             assert(false, "failt to load bundle")
-            return nil
         }
         
         return bundle
