@@ -18,11 +18,11 @@ extension Bundle {
         }
         
         return bundle
-    }
+    }()
 }
 
 public extension UIImage {
-    static func load(name: String) -> UIImage? {
+    static func designSystemImage(name: String) -> UIImage? {
         if let image = UIImage(named: name, in: Bundle.baseResource, compatibleWith: nil) {
             return image
         } else {

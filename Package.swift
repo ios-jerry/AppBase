@@ -29,7 +29,9 @@ let package = Package(
         
         .target(
             name: "DesignSystem",
-            dependencies: [],
+            dependencies: [
+                .byName(name: "AppBase")
+            ],
             resources: [.process("Resource")]),
     ]
 )
