@@ -36,4 +36,8 @@ extension String {
     func localizedString() -> String? {
         return Bundle.baseResource.localizedString(forKey: self, value: nil, table: nil)
     }
+    
+    func test2() {
+        print("test")
+    }
 }
